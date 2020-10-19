@@ -21,5 +21,6 @@ public class Testjsoup {
         //3.2获取数据
         String name = element.text();
         System.out.println(name);
+        System.out.println("cehsiceshi");
     }
 }
