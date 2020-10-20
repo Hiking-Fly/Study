@@ -6,7 +6,6 @@ import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.IOException;
-
 public class Testjsoup {
     public static void main(String[] args) throws IOException {
         String path = Testjsoup.class.getClassLoader().getResource("student.xml").getPath();
@@ -14,7 +13,6 @@ public class Testjsoup {
         Document document = Jsoup.parse(new File(path), "utf-8");
         //3.获取元素对象 Element
         Elements elements = document.getElementsByTag("name");
-
         System.out.println(elements.size());
         //3.1获取第一个name的Element对象
         Element element = elements.get(0);
